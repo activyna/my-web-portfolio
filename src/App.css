@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+/*Aux Properties
+
+  background: linear-gradient(to bottom, #5E17EB,#8940FF);
+  border:solid 1px #8940FF ;
+*/
+
+/*Layout Styles----------------------------------------------*/
+
+.Layout{
+  width: 100%;
+  height: auto;
+  background-color:rgb(0, 0, 0);
+  display: grid;
+  grid-template-areas: 
+                      "sect1 sect1 sect1 sect1"
+                      "sect2 sect2 sect2 sect2"
+                      "sect3 sect3 sect3 sect3"
+                      "sect4 sect4 sect4 sect4"
+                      "sect5 sect5 sect5 sect5";
+  grid-template-rows: 100vh 100vh 100px 100px ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/*General Styles---------------------------------------------*/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.SectionOne, .SectionTwo{
   display: flex;
+  position: relative;
+  font-family: system-ui, -apple-system, Arial, Helvetica , sans-serif;
+}
+
+/*Component styles SectionOne--------------------------------*/
+
+.SectionOne {
+  color: rgb(0, 0, 0);
+  background: #FFFFFF;
+  grid-area: sect1;
   flex-direction: column;
   align-items: center;
+}
+
+.Occupation-sectionOne {
+  top: 15%;
+  position: relative;
+  width: 50%;
+  height: auto;
+  min-width: 350px;
+}
+
+/*Component styles ProfilePhoto------------------------------*/
+
+.ProfilePhoto {
+  position: relative;
+  width: 50%;
+  height: auto;
+  top: 10%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 5%;
 }
 
-.App-link {
-  color: #61dafb;
+.Container-profilePhoto {
+  width: 35%;
+  position: relative;
+  min-width: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Circle-profilePhoto {
+  background: linear-gradient(to bottom, #DA87FF,#FFFFFF);
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  clip-path: circle(41% at center);
+  bottom: -13%;
+}
+
+.Image-profilePhoto {
+  width: 100%;
+  height: auto;
+  position: relative;
+  border-radius: 46%;
+}
+
+/*Section 2 Styles--------------------------------------------*/
+
+.SectionTwo {
+  grid-area: sect2;
+  color: rgb(0, 0, 0);
+  background: #FFFFFF;
 }
