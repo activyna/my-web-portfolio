@@ -26,6 +26,8 @@
   display: flex;
   position: relative;
   font-family: system-ui, -apple-system, Arial, Helvetica , sans-serif;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*Component styles SectionOne--------------------------------*/
@@ -34,8 +36,6 @@
   color: rgb(0, 0, 0);
   background: #FFFFFF;
   grid-area: sect1;
-  flex-direction: column;
-  align-items: center;
 }
 
 .Occupation-sectionOne {
@@ -89,5 +89,22 @@
   grid-area: sect2;
   color: rgb(0, 0, 0);
   background: #FFFFFF;
+  justify-content: center;
 }
-/*Comment*/
+
+/*Component styles Skills-------------------------------------*/
+
+.Skills {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border:solid 1px #8940FF ;
+  background-color: #FAFAFA;
+  align-items: center;
+  justify-content: center;
+}
+
+.Skills-title{
+  color: #222222;
+}
